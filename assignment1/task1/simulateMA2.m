@@ -11,3 +11,9 @@ function y = simulateMA2(mu, theta1, theta2, T)
     end
 end
 
+
+% why T + 2: this is done so that t = 1 has history for epsilon t -1 and
+% epsilon t-2 at the first time point
+% therefore epsilon (t+2) corresponds to the current et
+% epsilon (t+1) corresponds to thte et-1
+% and epsilon(t) corresponds to the et
